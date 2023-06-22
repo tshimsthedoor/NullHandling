@@ -17,6 +17,13 @@ namespace NullHandling
             thisCouldBeNull = 7;
             Console.WriteLine(thisCouldBeNull);
             Console.WriteLine(thisCouldBeNull.GetValueOrDefault());
+
+            var address = new Address();
+            address.Building = null;
+            address.Street = null;
+            address.City = "London";
+            address.Region = null;
+
         }
     }
 
