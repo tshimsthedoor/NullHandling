@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace NullHandling
 {
     class Program
@@ -17,5 +18,13 @@ namespace NullHandling
             Console.WriteLine(thisCouldBeNull);
             Console.WriteLine(thisCouldBeNull.GetValueOrDefault());
         }
+    }
+
+    class Address
+    {
+        public string? Building;
+        public string Street;
+        public string City;
+        public string Region;
     }
 }
